@@ -51,6 +51,13 @@ class Student:
         """Метод для сравнения двух экземпляров классов по средней оценке"""
         return self.get_average_grade() == other.get_average_grade()
 
+    def __gt__(self, other):
+        """Метод для сравнения двух экземпляров классов по средней оценке"""
+        return self.get_average_grade() > other.get_average_grade()
+
+    def __lt__(self, other):
+        """Метод для сравнения двух экземпляров классов по средней оценке"""
+        return self.get_average_grade() < other.get_average_grade()
 
 class Mentor:
     def __init__(self, name, surname):
@@ -87,6 +94,15 @@ class Lecturer(Mentor):
     def __eq__(self, other):
         """Метод для сравнения двух экземпляров классов по средней оценке"""
         return self.get_average_grade() == other.get_average_grade()
+
+    def __gt__(self, other):
+        """Метод для сравнения двух экземпляров классов по средней оценке"""
+        return self.get_average_grade() > other.get_average_grade()
+
+    def __lt__(self, other):
+        """Метод для сравнения двух экземпляров классов по средней оценке"""
+        return self.get_average_grade() < other.get_average_grade()
+
 
 class Reviewer(Mentor):
     """Метод для занесения оценок эксперту"""

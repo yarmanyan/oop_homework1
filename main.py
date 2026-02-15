@@ -44,10 +44,16 @@ student.grades['Python'] = [5]
 student.grades['Git'] = [3]
 
 print(student.grades)
+print(str(lecturer))
 print(str(student))
 
+
+# Сравнение
+print('Сравнение')
 print(lecturer == student)
 print(student == lecturer)
+print(student > lecturer)
+print(student < lecturer)
 
 """Задание № 4. Полевые испытания"""
 print()
